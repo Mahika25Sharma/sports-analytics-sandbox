@@ -1,37 +1,22 @@
 # Cricket Batting Analytics using SQL
- 
-This project analyzes batting performance using advanced SQL analytics.
-The goal is to evaluate consistency, form, risk, and momentum using realistic cricket match data.
- 
+
+An end-to-end SQL analytics project evaluating batting performance across four dimensions: consistency, form, risk, and momentum. Built on a synthetic dataset modelled on international cricket match structures (T20 format).
+
 ## Data Model
 - Players
 - Matches
 - Innings
  
-The dataset simulates real international cricket performances.
+## Analysis modules
+
+**01_consistency_analysis.sql** — Scores batters using average runs, standard deviation, and coefficient of variation. Surfaces consistent performers that raw averages miss.
+
+**02_form_analysis.sql** — Calculates 5-innings rolling averages using window functions and compares short-term form against career baseline.
+
+**03_risk_analysis.sql** — Measures low-score frequency (runs ≤ 20) and classifies players into reliability tiers using NTILE.
+
+**04_momentum_analysis.sql** — Detects consecutive high-scoring streaks (runs ≥ 50) using a gaps-and-islands approach with LAG and conditional row numbering.
+
+**Key SQL features used:** CTEs, window functions (STDDEV, NTILE, ROW_NUMBER, AVG OVER), rolling aggregations, conditional classification logic.
  
-## Analysis Performed
- 
-### 1. Batting Consistency
-- Used average runs, standard deviation, and coefficient of variation
-- Identified consistent performers beyond raw averages
- 
-### 2. Batting Form
-- Calculated rolling averages (last 5 innings)
-- Compared short-term form against career performance
- 
-### 3. Risk & Reliability
-- Measured low-score frequency (Runs ≤ 20)
-- Classified players into risk buckets using NTILE
- 
-### 4. Momentum & Streak Analysis
-- Detected consecutive high-scoring streaks (Runs ≥ 50)
-- Used gaps-and-islands patterns with window functions
- 
-## Skills Demonstrated
-- Advanced SQL
-- Window Functions
-- CTEs
-- Analytical problem solving
-- Sports analytics thinking
- 
+## Sample finding
