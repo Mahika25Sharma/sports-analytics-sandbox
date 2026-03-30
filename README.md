@@ -14,14 +14,15 @@ It contains experiments, notebooks, and mini-projects built using open datasets 
 ---
 
 ### 🧱 Tech Stack
-- **Languages:** Python, SQL  
+- **Languages:** Python, SQL [window functions (STDDEV, NTILE, ROW_NUMBER, AVG OVER), CTEs, rolling aggregations]
+
 - **Libraries:** Pandas, NumPy, Matplotlib/Seaborn, Plotly, Scikit-learn  
-- **Data Engineering:** Azure Data Factory, PySpark, Databricks  
-- **Visualization:** Power BI, Streamlit  
+- **Visualization:** Power BI  
 
 ---
 
-### 📊 Example Ideas
-- Player performance trends by opposition and venue.  
-- Win probability modeling based on current run rate and wickets.  
-- Player similarity clustering (e.g., batters by strike rate + consistency).  
+### 📊 Projects
+- Cricket Batting Analytics — SQL
+- IPL Batting Consistency Model — Python
+
+---
